@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card" style="width: 24rem;">
+        <img src="../../assets/img/{{currentWeather?.name}}.jpg" class="card-img-top" alt="jpeg">
+        <div class="card-body">
+            <h5 class="card-title">{{currentWeather?.name}} </h5>
+            <p class="card-text">Current Temperature: {{currentWeather?.main.temp}}</p>
+            <p class="card-text">High Temperature:  {{currentWeather?.main.temp_max}}</p>
+            <p class="card-text">Low Temperature: {{currentWeather?.main.temp_min}}</p>
+            <p class="card-text">Current sky:  {{currentWeather?.weather[0].description}}</p>
+            <p class="card-text">Humidity:  {{currentWeather?.main.humidity}}</p>
+            <p class="card-text">Wind speed: {{currentWeather?.wind.speed}}</p>
+        </div>
+    </div>
+</div>

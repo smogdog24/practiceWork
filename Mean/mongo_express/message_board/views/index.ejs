@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="border-bottom  border-dark">The Dojo Message Board</h1>
+        <form action="/message", method="POST">
+            Name:<br>
+            <input type="text" name="name">
+            <br>
+            Message:<br>
+            <textarea name="message" rows="2" cols="40"></textarea>
+            <br><br>
+            <input type="submit" value="Post Message">
+        </form> 
+        <!-- start of comment panel -->
+        <div class="panel border border-secondary rounded-top mt-4 pb-2 pl-2">
+            <% for(const message of messages) { %>
+            <div class="panel-heading">
+                <p>name: <%= message.name %></p>
+                <p>message: <%= message.message %></p>
+            </div>
+                <% for(const cmt of message.comments) { %>
+            <div class="panel-body bg-secondary pl-2 pb-1">
+                <p>Name: <%= cmt.name %></p>
+                <p>message: <%= cmt.comment %> </p>
+            </div>
+                <% } %>
+            <div class="panel-footer">
+                <form action="/newComment/<%=message.id%>" method="POST">
+                    name:<br>
+                    <input type="text" name="name">
+                    <br>
+                    Message:<br>
+                    <textarea name="comment" rows="2" cols="60"></textarea>
+                    <br><br>
+                    <input type="submit" value="Post Comment">
+                </form>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>

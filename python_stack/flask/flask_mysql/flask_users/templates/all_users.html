@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Flask_users ALL</title>
+</head>
+<body>
+    <h1> All Users </h1>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for users in all_users %}
+            <tr>
+            <th scope="row">{{users["id_user"]}}</th>
+            <td>{{users["first_name"]}}</td>
+            <td>{{users["last_name"]}}</td>
+            <td>{{users["email"]}}</td>
+            <td>
+                <a href="/show_user/{{users['id_user'] }}">show </a>
+                <a href="/show_user/{{users['id_user'] }}/edit">Edit </a>
+                <a href="/show_user/{{users['id_user'] }}/delete">Delete </a>
+            </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

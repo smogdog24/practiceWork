@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>single monkey</h1>
+    <a href="/monkey/<%= monkey.id %>"><h3>Name: <%= monkey.name %></h3></a>
+    <h3>Age: <%= monkey.age %></h3>
+    <h3>Color: <%= monkey.color %></h3>
+    <a href="/monkey/<%= monkey.id %>/edit">Edit monkey</a>
+    <form action="/monkey/<%= monkey.id %>/delete" method="post">
+        <button type="submit">DELETE</button>
+    </form>
+</body>
+</html>

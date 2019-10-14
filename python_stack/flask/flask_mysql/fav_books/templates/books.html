@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap.css">
+    <title>Favorite Books</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row border-bottom border-dark">
+            <div class="col-sm-8">
+                <h2>Welcome USER</h2>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a href="/logout">LOG OUT </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3> Add a Favorite Book</h3>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                <div class="input-group pb-xl-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Book Description</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-sm-6">
+                <h3>All Books</h3>
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="#">Book Title</a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">added by: user</h6>
+                        <p class="card-text">book description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laudantium reprehenderlestias cupiditate. Nobis quibusdam hic optio itaque architecto eveniet.</p>
+                        <a href="#" class="card-link">like this</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

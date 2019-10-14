@@ -1,0 +1,17 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Product Manager</a>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['products/new']">New Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['products']">Product list</a>
+        </li>
+      </ul>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

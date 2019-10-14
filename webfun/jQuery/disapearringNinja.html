@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Disapearring Cats</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.one').click(function(){
+                $(this).hide();
+            });
+            $('.two').click(function(){
+                $(this).hide();
+            });
+            $('.three').click(function(){
+                $(this).hide();
+            });
+            $('.four').click(function(){
+                $(this).hide();
+            });
+            $('.five').click(function(){
+                $(this).hide();
+            });
+            $('.six').click(function(){
+                $(this).hide();
+            });
+            $('.seven').click(function(){
+                $(this).hide();
+            });
+            $('.eight').click(function(){
+                $(this).hide();
+            });
+            $('.restore').click(function(){
+                $(".cat").show();
+            });
+        })
+    </script>
+</head>
+<body>
+    <div> 
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="one cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="two cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="three cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="four cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="five cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="six cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="seven cat" width="125" padding="15px" alt="catpic.jpg">
+        <img src="https://i.imgur.com/91vvYkE.jpg" class="eight cat" width="125" padding="15px" alt="catpic.jpg">
+    </div>
+    <button class="restore">Click here to restore</button>
+</body>
+</html>

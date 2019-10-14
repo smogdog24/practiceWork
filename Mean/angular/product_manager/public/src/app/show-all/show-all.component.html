@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div *ngFor="let prod of products">
+    <div class="card mt-2" style="width: 18rem;">
+        <img src="{{prod.imageURL}}" class="card-img-top" alt=" image">
+        <div class="card-body">
+            <h5 class="card-title">{{prod.name}}</h5>
+            <p class="card-text">cost: ${{prod.price}}</p>
+            <a [routerLink]="['edit']" class="btn btn-primary ">edit TODO</a>
+            <a (click)="onDelete(prod._id") class="btn btn-primary ml-3">delete TODO</a>
+        </div>
+    </div>
+    </div>  
+</div>

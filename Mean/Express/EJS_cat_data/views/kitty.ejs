@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>kitty the cat</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Details for <%= kitty.name %>  </h1>
+        <img src="/images/kitty.jpg" class=" d-block pt-2" alt=".jpg cat">
+        <h3> Favorite Food:<%= kitty.food %> </h3>
+        <h3> Age:<%= kitty.age %></h3>
+        <h3>Sleeping Spots:</h3>
+        <ul>
+            <% for(var spots of kitty.sleeping_spot) { %>
+            <li><%= spots %></li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<div class="container">
+    <div *ngFor="let rabbit of rabbits">
+        <img class="img-thumbnail rounded-circle m-3" style="height:200px" (click)="rabbitToShow(rabbit)" src="./../../assets/img/{{rabbit.color}}.PNG">
+    </div>
+</div>
+<app-show-one *ngIf="selectedRabbit" [rabbitToShow]="selectedRabbit"></app-show-one>

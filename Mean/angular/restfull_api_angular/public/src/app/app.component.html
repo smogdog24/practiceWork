@@ -1,0 +1,15 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let task of allTasks">{{task?.name}} - {{task?.description}}</li>
+  </ul>
+  
+</div>
+<div class="container">
+  <h2>Another: </h2>
+  <Li>{{anotherTask?.name}} - {{anotherTask?.description}}</Li>
+</div>
+<button (click)="showTask()">Click ME </button>
+<div *ngIf="isClicked == true" class="container">
+  <h2>Another: </h2>
+  <Li>{{oneTask?.name}} - {{oneTask?.description}}</Li>
+</div>

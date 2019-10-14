@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    /*outline: 2px dashed orange;*/
+}
+p{
+    color: whitesmoke;
+    font-size: 11px;
+    display: inline-block;
+}
+    #wrapper{
+        width: 970px;
+        margin: 0px auto;
+        background-color: black;
+    }
+    .header{
+            width: 960px;
+            margin: auto;
+            background-color: rgb(27, 27, 27);
+            padding-bottom: 15px;
+    }
+        .header img{
+            width: 300px;
+            display: inline-block;
+            margin: 15px 0px 0px 29px;
+    }
+        .header p{
+            font-size: 17px;
+            color: whitesmoke;
+            vertical-align: top;
+            margin: 41px 0px 0px 358px;
+            font-weight: 850;
+            display: inline-block;
+    }
+    #navbar{
+        width: 960px;
+        margin: auto;
+        background-color: grey;
+        padding: 10px 0px;
+    }
+        #navbar ul li{
+            display: inline-block;
+            font-size: 13px;
+    }
+            #navbar ul li a{
+                text-decoration: none;
+                color: whitesmoke;
+                margin-left: 7px;
+                padding: 5px 7px;
+                border-right: 3px groove rgb(70, 70, 70);
+    }
+    #wrapper > img{
+        width: 960px;
+        margin-left: 5px;
+    }        
+    #featurebox{
+        width: 960px;
+        margin: 0px auto;
+        background-color: rgb(27, 27, 27);
+        border-top: 5px solid grey;
+    }
+    .feature{
+            width: 220px;
+            margin-left: 10px;
+            padding: 15px 0px;
+            vertical-align: top;
+            display: inline-block;
+    }
+     .feature img{
+            width: 45px;
+            display: inline-block;
+    }
+        .feature h4{
+            font-size: 20px;
+            font-family: serif;
+            color: orange;
+            align-self: center;
+            text-align: center;
+            display: inline-block;
+            margin-left: 10px;
+    }
+            #featurebox .feature p{
+                margin-left: 60px;
+    }
+    #purchase {
+        width: 960px;
+        margin: 0px auto;
+        background-color: rgb(15, 15, 15);
+    }
+        .purchaseinfo {
+            width: 65%;
+            padding: 30px 0px;
+            margin-left: 20px;
+            display: inline-block;
+    }
+            .purchaseinfo h3{
+                font-size: 23px;
+                color: whitesmoke;
+                font-weight: lighter;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        color: white;
+        background-color: orange;
+        border-top: 2px solid wheat;
+        vertical-align: top;
+        margin: 40px 0px 0px 150px;
+    }
+    #portfolio{
+        width: 960px;
+        margin: 0px auto;
+        background-color: rgb(27, 27, 27);
+    }
+    h5{
+        font-size: 15px;
+        color: orange;
+        padding: 5px;
+        text-align: left;
+    }
+    .portfolioHeader{
+        display: inline-block;
+        width: 960px;
+        margin: 0px auto;
+        padding: 5px 0px 20px 0px;
+    }
+            .portfolioHeader h1{
+                font-size: 22px;
+                color: whitesmoke;
+                margin: 41px 0px 0px 20px;
+                font-weight: 650;
+                display: inline-block;
+                font-family: serif;
+    }
+            .portfolioHeader a{
+                vertical-align: top;
+                margin: 41px 0px 0px 750;
+                text-decoration: none;
+                font-size: 13px;
+                color: goldenrod;
+                display: inline-block;
+    }
+        .Projects{
+        width: 220px;
+            margin-left: 15px;
+            padding: 15px 0px;
+            vertical-align: top;
+            display: inline-block;
+    }
+     /* #portfolio .Projects img{
+        border-style: solid 5px grey;
+        }   */
+            #portfolio > a{
+                font-size: 10px;
+                color: grey;
+                margin-left: 92%;
+                padding-bottom: 5px;
+                text-decoration: none;
+    }
+

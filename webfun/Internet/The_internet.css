@@ -1,0 +1,38 @@
+*{ 
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+    .wrapper {
+        background-color: lightskyblue;
+        width: 970px;
+        margin: 0px auto;
+
+    }
+
+    .header{
+        width: 970px;
+        margin: 0px auto;
+        display: inline-block;
+    }
+    img [alt="globe.png"]{
+        width: 100px;
+        display: inline-block;
+        position: absolute 100px 0px 0px 20px;
+        outline: 3px solid blue;
+    }
+    .header h1{
+        letter-spacing: 2px;
+        padding: 30px 0px 10px 0px;
+        align-self: center;
+
+    }
+    .header h2{
+        width: 970px;
+        margin: auto;
+        background-color: lightseagreen;
+        color: white;
+        padding: 15px 0px;
+        text-indent: 15px;
+    }

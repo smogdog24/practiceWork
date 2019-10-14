@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>jQuery Functions</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.click').click(function(){
+                alert("wooo hello");
+            });
+            $('.hide').click(function(){
+                $(".hide").hide();
+            });
+            $('.show').click(function(){
+                $(".hide").show();
+            });
+            $('.toggle').click(function(){
+                $(".show").toggle();
+            });
+            $('.slideDown').click(function(){
+                $(".hiding").slideDown();
+            });
+            $('.slideUp').click(function(){
+                $(".slidehide").slideUp();
+            });
+            $('.toggleSlide').click(function(){
+                $(".slidehide").slideToggle();
+            });
+            $('.fadeIn').click(function(){
+                $('.inFade').fadeIn();
+            });
+            $('.fadeOut').click(function(){
+                $(".outFade").fadeOut();
+            });
+            $('.addClass').click(function(){
+                $('.classAdd').addClass("bluefont");
+            });
+            $('.before').click(function(){
+			    $("#before").before("<h3>I'm the new guy!</h3>")
+		    })
+            $('.after').click(function(){
+                $("#after").after("<h1>I've been added after</h1>")
+            })
+            $('.append').click(function(){
+                $("#append").append("<span> ...I am a span tag that was appended</span>")
+            })
+            $('.html').click(function(){
+                $("#html").html("<h1>html stuff</h1>")
+            })
+            $('.attr').click(function(){
+                var classVal = $("#attr").attr("class")
+                $('#attr').append(classVal)
+            })
+            $('.attr2').click(function(){
+                $("#attr").attr("class", "red")
+            })
+            $('.val').click(function(){
+                console.log($("#val").val())
+            })
+            $('.val2').click(function(){
+                $('#val').val("eric")
+            })
+            $('.text').click(function(){
+                $("#text").text("hello")
+            })
+            var ele = $("#data")
+            $.data(ele, "name", "Eric")
+            $('.data').click(function(){
+                var value = $.data(ele,"name")
+                $("#data").after(value)
+            })
+        })
+
+    </script>
+    <style type="text/css">
+		.bluefont {
+			color:rgb(32, 17, 102);
+            font-family: cursive;
+            font-style: italic;
+		}
+        .purple {
+            color:purple;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Click</legend>
+        <p>Adds function that occurs when an element is clicked. Click for an ALERT</p>
+        <button class="click">Click</button>
+    </fieldset>
+    <fieldset>
+        <legend>Hide </legend>
+        <p>This hides an element </p>
+        <button class="hide"> Click here to hide this button </button>
+    </fieldset>
+    <fieldset>
+            <legend>Show</legend>
+            <p>This will show the element</p>
+            <button class="show"> Click here to show the prevoius element element </button>
+    </fieldset> 
+    <fieldset>
+        <legend>Toggle</legend>
+        <p>This will toggle show button</p>
+        <button class="toggle"> Click here to hide/show "show button" </button>
+    </fieldset> 
+    <fieldset>
+        <legend>SlideDown</legend>
+        <p>This will slide down the hiding elem</p>
+        <p class="hiding" hidden>I'M THE ELEMENT HIDING</p>
+        <button class="slideDown"> Click here to slide </button>
+    </fieldset> 
+    <fieldset>
+        <legend>slideUp</legend>
+        <p>This will slide up the element to hide</p>
+        <p class="slidehide">I'M SUPPOSED TO SLIDE UP and hide</p>
+        <button class="slideUp"> Click here to slide up </button>
+    </fieldset> 
+    <fieldset>
+        <legend>slideToggle</legend>
+        <p>This will toggle slide the element above</p>
+        <button class="toggleSlide"> Toggle slide button </button>
+    </fieldset>
+    <fieldset>
+        <legend>fadeIn</legend>
+        <p class="inFade" hidden>this text faded in</p>
+        <button class="fadeIn">FadeIn this text </button>
+    </fieldset>
+    <fieldset>
+        <legend>fadeOut</legend>
+        <p class="outFade">this text will fade out</p>
+        <button class="fadeOut">Button will fade text in this field </button>
+    </fieldset>  
+    <fieldset>
+        <legend>addClass</legend>
+        <p class="classAdd">This font will change style...</p>
+        <button class="addClass"> this will add .class to element </button>
+    </fieldset> 
+    <fieldset>
+		<legend>before</legend>
+		<p>Adds something before the element</p>
+		<p id="before">An h1 tag will be added before me(above)</p>
+		<button class="before">Click to add an element</button>
+	</fieldset>
+	<fieldset>
+		<legend>after</legend>
+		<p>Adds something after the element</p>
+		<p id="after">An h1 tag will be added after me</p>
+		<button class="after">Click to add an element after the p tag</button>
+	</fieldset>
+	<fieldset>
+		<legend>append</legend>
+		<p>appends something after the last element/text within an element</p>
+		<p id="append">I am the p tag</p>
+		<button class="append">Click to append another element within the p tag</button>
+	</fieldset>
+	<fieldset>
+		<legend>html</legend>
+		<p>replaces the html within a element</p>
+		<div id="html">I am a div<p>I am a p tag within the div</p></div>
+		<button class="html">click to replace the div element with an h1 element</button>
+	</fieldset>
+	<fieldset>
+		<legend>attr</legend>
+		<p>Retreives or set an attribute of an element</p>
+		<p class="purple" id="attr">I am a p tag with the class of purple. Class=</p>
+		<button class="attr">Click to retreive the class</button>
+		<button class="attr2">click to change the class attribute purple</button>
+	</fieldset>
+	<fieldset>
+		<legend>val</legend>
+		<p>Retreives or set a value of an input</p>
+		<input type="text" name="name" id="val">
+		<button class="val">Click to retreive the value of the input. Look in your console</button>
+		<button class="val2">click to change the value of the input to "eric"</button>
+	</fieldset>
+	<fieldset>
+		<legend>text</legend>
+		<p>replace the text of an element</p>
+		<p id="text">My text will be replaced</p>
+		<button class="text">Click to replace the text with "hello"</button>
+	</fieldset>
+	<fieldset>
+		<legend>data</legend>
+		<p>stores a data value in that element(hidden in javascript)</p>
+		<p id="data">I have a name hidden in me. What is it?</p>
+		<button class="data">Click to retreive the data</button>
+	</fieldset>
+</body>
+</html>
+
+<!--
+<fieldset>
+    <legend>IIII</legend>
+    <p>IIIII</p>
+    <button class="IIII"> Click here to </button>
+</fieldset> 

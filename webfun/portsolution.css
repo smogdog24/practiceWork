@@ -1,0 +1,139 @@
+body *{
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+}
+
+.wrapper {
+	width: 960px;
+	height: 1000px;
+}
+.header {
+	width: 938px;
+	height: 30px;
+	padding: 15px;
+}
+.header h2 {
+	display: inline-block;
+	margin-right: 480px;
+}
+.header h3 {
+	display: inline-block;
+}
+.main_content {
+	padding:20px 20px;
+	width:929px;
+	height:870px;
+	background: -webkit-radial-gradient(#6f5964, #1f0f13); /* Safari 5.1- 6.0 */
+    background: -o-radial-gradient(#6f5964, #1f0f13); /* Opera 11.6-12.0 */
+    background: -moz-radial-gradient(#6f5964, #1f0f13); /* Firefox 3.6-15 */
+    background: radial-gradient(#6f5964, #1f0f13); /* Standard syntax */
+}
+.main_content img {
+	margin-bottom: 20px;
+	width:410px;
+	height:auto;
+	border: 5px solid #7d7377;
+}
+.main_content .about_me_section {
+	background: -webkit-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Safari 5.1- 6.0 */
+    background: -o-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Opera 11.6-12.0 */
+    background: -moz-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Firefox 3.6-15 */
+    background: linear-gradient(to bottom right, #fefefe, #dbcbda); /* Standard syntax */
+	width: 500px;
+	display:inline-block;
+	vertical-align: top;
+	height:280px;
+}
+.main_content .about_me_section h2 {
+	padding: 5px 10px;
+	background: -webkit-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Safari 5.1- 6.0 */
+    background: -o-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Opera 11.6-12.0 */
+    background: -moz-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Firefox 3.6-15 */
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Standard syntax */
+    color:white;
+}
+.main_content p {
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+.main_content a{
+	padding-left: 10px;
+}
+.main_content .projects {
+	width:295px;
+	height: 570px;
+	display : inline-block;
+	background-color: lightgray;
+	vertical-align: top;
+	background: -webkit-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Safari 5.1- 6.0 */
+    background: -o-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Opera 11.6-12.0 */
+    background: -moz-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Firefox 3.6-15 */
+    background: linear-gradient(to bottom right, #fefefe, #dbcbda); /* Standard syntax */
+}
+.main_content .projects.spacing {
+	margin-right:15px;
+}
+.projects img, 
+.projects ul {
+	width: 293px;
+	margin:0;
+}
+.projects h2 {
+	width: 273;
+	padding: 5px 10px;
+	color: white;
+	background: -webkit-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Safari 5.1- 6.0 */
+    background: -o-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Opera 11.6-12.0 */
+    background: -moz-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Firefox 3.6-15 */
+    background: linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Standard syntax */
+}
+.projects img{
+	border:none;
+}
+.project p{
+	width: 278;
+}
+.tech_images {
+	padding:15px 0px 0px 12px;
+}
+.tech_images li{
+	display: inline-block;
+	margin-right:10px;
+}
+.tech_images img{
+	width:40px;
+	height:40px;
+}
+.projects button {
+	background-color: green;
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+	padding:5px;
+	margin: 10px 100px;
+	font-weight: 900;
+}
+.footer{
+	width:968px;
+	height:50px;
+}
+.footer p {
+	margin:auto;
+	width: 240px;
+}
+.footer ul {
+	width: 380px;
+	margin:auto;
+}
+.footer ul li {
+	display:inline-block;
+}
+.footer img {
+	width: 25px;
+	height:auto;
+	margin:auto;
+}
+.footer, .header{
+	background-color: #f9f9f9
+}

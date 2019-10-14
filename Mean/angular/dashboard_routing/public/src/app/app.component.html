@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>All the Rabbits</h1>
+  <div class="buttons">
+    <button [routerLink]="['/rabbits']"> view Rabbits</button>
+    <button [routerLink]="['/rabbits/new']"> Add new rabbit</button>
+    <!-- <div *ngFor="let rabbit of rabbits">
+      <img [routerLink]="['/rabbits/:id']">
+  </div> -->
+  </div>
+</div>
+<router-outlet></router-outlet>

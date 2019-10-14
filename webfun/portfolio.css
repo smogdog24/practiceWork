@@ -1,0 +1,156 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+    .wrapper{
+        width: 995px;
+        min-height: 700px;
+        background-color: silver;
+        display: inline-block;
+        padding: 10px 0px;
+ }
+/*
+    .header {
+        display: inline-block;
+        margin: 0px 0px 10px 0px;
+        background-color: red;
+        width: 970px;   
+}
+*/
+    h1{
+        display: inline-block;
+        font-family: sans-serif;
+        text-indent: 25px;
+}
+    h2{
+        display: inline-block;
+        margin-left: 415px;
+        font-size: 22px;
+}
+    .maincontent{
+        width: 970px;
+        min-height: 800px;
+        background-color: blue;
+        margin-top: 15px;
+        padding: 25px 0px 25px 25px;
+        background-image: radial-gradient(rgb(173, 159, 199), rgb(103, 69, 143), rgb(19, 10, 34));
+}
+    .maincontent img{
+        width: 400px;
+        height: 263px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(150, 147, 147);
+        vertical-align: top;
+        
+}
+    .maincontent .about{
+        width: 500px;
+        min-height: 266px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 15px;
+        background-image: linear-gradient(rgb(228, 228, 228), rgb(233, 233, 233), rgb(228, 228, 228));
+
+}
+    .about p{
+        padding: 5px;
+        font-size: 18px;
+    }
+    .about a{
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 18px;
+        color: black;
+    }
+    .maincontent h3{
+        background-image: linear-gradient(rgb(95, 95, 95), rgb(170, 170, 170));
+        vertical-align: top;
+        color: antiquewhite;
+        text-indent: 10px;
+        padding: 10px 0px;
+}
+
+    h4{
+        text-indent: 5px;
+        color: antiquewhite;
+        padding: 10px 0px;
+        background-image: linear-gradient(rgb(95, 95, 95), rgb(170, 170, 170));
+        
+
+}
+    .maincontent .sub p{
+        padding: 5px;
+        display: inline-block;
+        height: 178px;
+    }
+    .maincontent .sub{
+        width: 298px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px 15px 15px 0px;
+        background-image: linear-gradient(rgb(231, 230, 230), rgb(255, 255, 255), rgb(241, 237, 237));
+
+}   
+
+    .maincontent .sub img{
+        width: 298px;
+        height: auto;
+        border-style: none;
+    }
+    .maincontent .sub ul li img{
+        width: 45px;
+        display: inline-block;
+        border-style: none;
+    
+}
+    .techimages{
+        padding: 10px;
+        background-image: linear-gradient(rgb(231, 230, 230), rgb(255, 255, 255), rgb(241, 237, 237));
+    }
+/*    .maincontent .sub2{
+        width:300;
+        min-height: 500px;
+        display: inline-block;
+        margin-left: 30px;
+}
+    .maincontent .sub3{
+        width:300;
+        min-height: 500px;
+        display: inline-block;
+        margin-left: 30px;
+}*/
+    li{
+        display: inline-block;
+        
+    }
+    .techimages li img{
+        padding: 4px;
+    }
+
+    .sub button {
+        background-color: green;
+        color:white;
+        border:solid 1px black;
+        border-radius: 3px;
+        padding:5px;
+        margin: 10px auto;
+        font-weight: 900;
+        display: block;
+}
+    ul > img{
+        padding: 5px;
+}
+
+    .footer{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0px;
+}
+    .footer img{
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+}
+

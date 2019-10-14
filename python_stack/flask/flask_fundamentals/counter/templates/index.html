@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+a {
+    display: inline-block;
+    border: 1px black solid;
+    padding: 5px 10px;
+    background: aqua;
+    border-radius: 5px;
+}
+
+#erase {
+    display: inline-block;
+    border: 1px black solid;
+    padding: 5px 10px;
+    background: red;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <h1> Counter </h1>
+    <p> viewed {{session['counter']}} times </p>
+    <a href="/pluscounter" type="button"> Add +2 to Counter </a>
+    <a href="/pop" type="button">POP counter </a>
+    <h1> Page Views </h1>
+    <p> viewed {{session['views']}} times </p>
+    <a id="erase" href="/clear" type="button">Clear ALL</a>
+    
+</body>
+</html>

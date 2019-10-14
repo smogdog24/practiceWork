@@ -1,0 +1,23 @@
+
+<div class="container">
+    <form (submit)="onSubmit()">
+        <!-- {{ newRabbit | json}} This is for checking code and debugging -->
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input name="name" class="form-control" id="exampleFormControlInput1" [(ngModel)]="newRabbit.name" placeholder="name">
+        </div>
+        <div class="form-group">
+                <label for="exampleFormControlInput1">Age</label>
+                <input name="age" class="form-control" id="exampleFormControlInput1" [(ngModel)]="newRabbit.age" placeholder="age">
+            </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Color</label>
+            <select name="color" [(ngModel)]="newRabbit.color" class="form-control" id="exampleFormControlSelect1">
+            <option>Grey</option>
+            <option>Black</option>
+            <option>Brown</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit new rabbit</button>
+    </form>
+</div>

@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    outline: 2px solid black;
+}
+
+.color1 {
+    background: black;
+}
+
+.color2 {
+    background: red;
+}

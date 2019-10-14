@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Handy Helper Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm-8">
+                <h2>Hello {{session["greeting"]}}!</h2>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a href="/logout" class="mr-3">LOG OUT </a>
+                <a href="/newjob" class="border border-primary shadow p-1 mb-3 bg-white rounded">Create a New Job!</a>
+            </div>
+        </div>
+        <h4 class="mt-2"> Everyone's Jobs:</h4>
+        
+        <table class="table table-bordered table-striped mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Job</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in jobs %}
+                <tr>
+                    <td>{{i['title']}}</td>
+                    <td>{{i['location']}}</td>
+                    <td>
+                        <a href="/jobdetails/{{i['id_job']}}">View</a> |
+                            {% if session['id_user'] == i['users_job'] %}
+                            <a href="/delete/{{i['id_job']}}/{{i['users_job']}}"> Remove</a> |
+                            {% else %}
+
+                            {% endif %}
+                            {% if session['id_user'] == i['users_job'] %}
+                            <a href="/edit/{{i['users_job']}}/{{i['id_job']}}"> Edit</a>
+                            {% else %}
+
+                            {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

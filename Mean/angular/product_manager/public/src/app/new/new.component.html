@@ -1,0 +1,20 @@
+<p>new works!</p>
+<div class="container">
+    <form (submit)="onSubmit()">
+    <!-- This line below is for checking code and debugging -->
+    <!-- {{ newProduct | json}}  -->
+    <div class="form-group">
+        <label >Name <span *ngIf="errors.name.message"> {{errors.name.message}} </span></label>
+        <input name="name" class="form-control"  [(ngModel)]="newProduct.name" placeholder="name">
+    </div>
+    <div class="form-group">
+        <label >Price <span *ngIf="errors.name.message"> {{errors.price.message}} </span></label>
+        <input name="price" class="form-control" [(ngModel)]="newProduct.price" placeholder="price">
+    </div>
+    <div class="form-group">
+        <label >Image URL <span *ngIf="errors.name.message"> {{errors.imageURL.message}} </span></label>
+        <input name="imageURL" class="form-control"  [(ngModel)]="newProduct.imageURL" placeholder="image URL">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit new product</button>
+    </form>
+</div>
